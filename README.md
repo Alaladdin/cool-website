@@ -2,6 +2,8 @@
 
 # Cool website
 
+[Open website](https://coola.netlify.app/)
+
 ### Used in this project
 
 - Bootstrap
@@ -14,6 +16,12 @@
 - sass
 
 ### Usage
+
+**Install dependencies**
+
+```shell
+npm install
+```
 
 **Dev mode**: starts the watcher
 
