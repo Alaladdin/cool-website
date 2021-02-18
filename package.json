@@ -1,0 +1,30 @@
+{
+  "name": "agrabah-site",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "gulp",
+    "build": "gulp build",
+    "clean": "gulp clean"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "chalk": "^4.1.0",
+    "eslint": "^7.20.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "gulp": "^4.0.2",
+    "gulp-changed": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-pug": "^4.0.1",
+    "gulp-sass": "^4.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-uglify-es": "^2.0.0",
+    "stylelint": "^13.10.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.19.0"
+  }
+}

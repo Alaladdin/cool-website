@@ -1,0 +1,275 @@
+doctype html
+html(lang='en')
+  head
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(charset='utf-8')
+    title Agrabah Site
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&display=swap')
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.carousel.min.css')
+    link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/owl.carousel@2.3.4/dist/assets/owl.theme.default.min.css')
+    link(rel='stylesheet' href='css/main.css')
+  body
+    .scroll-top Back to top
+    include includes/nav
+    include includes/aside
+    main.main
+      section.greeting
+        .offer
+          .container
+            .row
+              .col-md-6.vh-dependent
+                .offer-cont
+                  h1.offer-cont__title Work around you and your team
+                  p.offer-cont__text From ads that dance or sing to MTV-like commercials, online advertisers are now using a new type of technology “rich media” to attract consumers.
+                  button.offer-cont__btn.btn Get Started
+              .col-md-6.be-static.vh-dependent
+                .hero
+                  a.video(href='#0')
+
+      section.problems
+        .container
+          .row
+            .col-md-5
+              img.img-fluid(class='poster' src='res/photos/image-3.jpg' alt='Poster')
+            .col-md-6.ml-auto.d-flex.align-items-center
+              .about
+                h2.about__title We solve digital problems with an outstanding creative flare
+                p.about__text The best time to view the moon, obviously, is at night when there are few clouds and the weather is accommodating for a long and lasting study.
+                p.about__text For most of us, the idea of astronomy is something we directly connect to “stargazing”, telescopes and seeing magnificent displays in the heavens.
+                .about__author
+                  h4.about__name Denis Shepovalov
+                  p.about__desc Co-Founder & CEO
+
+      section.services
+        .container
+          .row
+            .col-md-6
+              .section-title
+                p.section-title__label  Services
+                h2.section-title__heading We love work hard and explore new things that’s why we cover lot of things. Check our service list and view details
+            .col-md-5.ml-auto.d-flex.justify-content-between
+              ul.serv-list.serv-list_left
+                li.serv-list__item Multimedia
+                li.serv-list__item Interactive design
+                li.serv-list__item Packaging
+                li.serv-list__item Branding
+
+              ul.serv-list.serv-list_right
+                li.serv-list__item Creative Strategy
+                li.serv-list__item UI/UX
+                li.serv-list__item Coding
+          .row
+            .col
+              .owl-carousel.owl-theme.works-carousel
+                - for (let x = 0; x < 4; x++)
+                  .item
+                    img.img-fluid(src="res/photos/slider/img-1.jpg" alt='image-' + x)
+                    span.owl-carousel__play
+
+      section.result
+        .container
+          .row
+            .col-md-6.be-relative
+              .collage
+                img.img-fluid(src="res/photos/image-6.svg" alt="result image 1")
+            .col-md-6
+              .easy
+                h2.easy__title Well thought with super easy to use
+                p.easy__text As we approached the palace I could see through the great windows of the first floor the brilliantly illuminated audience chamber of Than Kosis. The immense hall was crowded with nobles and their women.
+                .easy__point.easy__point_first Ultimate Result
+                .easy__point.easy__point_second Minimal Design
+
+      section.works.tabs
+        .container
+          .row
+            .col-md-6
+              .section-title
+                p.section-title__label Our works
+                h2.section-title__heading Discover our Work
+            .col-12.col-xl-6
+              ul.work-tabs.tabs__caption
+                li.work-tabs__item.active
+                  a All
+                li.work-tabs__item
+                  a Branding
+                li.work-tabs__item
+                  a Web
+                li.work-tabs__item
+                  a Development
+                li.work-tabs__item
+                  a Films
+          .row
+            .col
+              .works-wrap.tabs__content.active
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-1.jpg" alt="work-1")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-2.jpg" alt="work-2")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-3")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-4.jpg" alt="work-4")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-5.jpg" alt="work-5")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-6.jpg" alt="work-6")
+
+              .works-wrap.tabs__content
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-6.jpg" alt="work-1")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-5.jpg" alt="work-2")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-4.jpg" alt="work-3")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-4")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-2.jpg" alt="work-5")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-1.jpg" alt="work-6")
+
+              .works-wrap.tabs__content
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-1")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-4.jpg" alt="work-2")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-5.jpg" alt="work-3")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-1.jpg" alt="work-4")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-2.jpg" alt="work-5")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-6.jpg" alt="work-6")
+
+              .works-wrap.tabs__content
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-5.jpg" alt="work-1")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-2")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-4.jpg" alt="work-3")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-2.jpg" alt="work-4")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-5")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-1.jpg" alt="work-6")
+
+              .works-wrap.tabs__content
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-2.jpg" alt="work-1")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-6.jpg" alt="work-2")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-5.jpg" alt="work-3")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-3.jpg" alt="work-4")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-1.jpg" alt="work-5")
+                a.works-wrap__item(href='#0')
+                  img.img-fluid(src="res/photos/works/img-4.jpg" alt="work-6")
+
+          .row
+            .col-md-8
+              .desc
+                p.desc__text It picks up the words on the page and displays ads that are similar to those words. Then when someone either performs an action or clicks on your page you will get paid.
+            .col-md-4.ml-auto
+              .works-btn
+                button.btn Our works
+
+      section.testimonials
+        .container
+          .owl-carousel.owl-theme.contributor-carousel
+            - for (var x = 0; x < 2; x++)
+              .row
+                .col-md-6
+                  .section-title
+                    p.section-title__label Testimonials
+                    h2.section-title__heading "Professionals in their craft! All products were super great with strong attention to details, and overall vibe"
+
+                  .contributor
+                    h3.contributor__title Polina Kuzina
+                    p.contributor__desc Manager at Craftwork
+
+                .col-md-5.ml-auto
+                  img.cont-photo.img-fluid(src="res/photos/image-7.jpg" alt="Polina Kuzina")
+
+      section.clients
+        .container
+          .row
+            .col-md-6
+              .section-title
+                h2.section-title__heading Our Clients
+
+            .offset-md-1.col-md-5
+              .section-title
+                p.section-title__label We worked with
+                p.section-title__desc Our favorite brands are our friends! We help them to achieve their goals, they help us to stay sharp.
+
+          .row
+            .col
+              .clients-row
+                - var companies = ['xiaomi', 'tinder', 'apple', 'nike', 'amd']
+                each val in companies
+                  a(href="#0")
+                    img.img-fluid(src='res/icons/' + val + '.svg' alt=(val.charAt(0)
+                      .toUpperCase() + val.slice(1)))
+
+    footer.footer
+      .container
+        .row
+          .col.col-sm-1
+            a(href="#0")
+              .footer-logo
+          .col-12.col-sm.col-xl-4
+            .footer-list-wrapper
+              ul.footer-list
+                li.footer-list__item
+                  h4 Developers
+                li.footer-list__item
+                  a(href='#0') Documentation
+                li.footer-list__item
+                  a(href='#0')  Tutorials
+                li.footer-list__item
+                  a(href='#0') Open source
+                li.footer-list__item
+                  a(href='#0') What's new?
+
+              ul.footer-list
+                li.footer-list__item
+                  h4 Company
+                li.footer-list__item
+                  a(href="#0") About
+                li.footer-list__item
+                  a(href="#0") Careers
+                li.footer-list__item
+                  a(href="#0") Pricing
+                li.footer-list__item
+                  a(href="#0") Legal
+
+              ul.footer-list
+                li.footer-list__item
+                  h4 Social
+                li.footer-list__item
+                  a(href="#0") Twitter
+                li.footer-list__item
+                  a(href="#0") Instagram
+                li.footer-list__item
+                  a(href="#0") Github
+          .offset-xl-1.col
+            .footer-links
+              a(href="#0")
+                .footer-links__item
+                  h4 Contact
+                  p Sales
+              a(href="#0")
+                .footer-links__item
+                  h4 Contact
+                  p Support
+
+
+    script(src='https://code.jquery.com/jquery-3.4.1.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js')
+    script(src='js/main.js')

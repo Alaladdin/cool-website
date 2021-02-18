@@ -1,0 +1,11 @@
+mixin works-carousel(idz)
+  .owl-carousel.owl-theme.works-carousel
+    - var n = 0
+    while n > idz
+      .item
+        img(src="res/photos/slider/img-1.jpg" alt=n++)
+        span.owl-carousel__play
+
+
+
+
